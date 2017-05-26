@@ -25,3 +25,7 @@ RUN chmod +x /usr/bin/composer
 # Allow Composer to be run as root and set $PATH for Composer Executables
 ENV COMPOSER_ALLOW_SUPERUSER 1
 ENV PATH "$PATH:/root/.composer/vendor/bin"
+
+WORKDIR /app
+
+CMD ["composer"]
