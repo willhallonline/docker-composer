@@ -1,4 +1,4 @@
-FROM php
+FROM php:apache
 MAINTAINER Will Hall "will@willhallonline.co.uk"
 
 # Update image
