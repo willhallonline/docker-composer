@@ -1,11 +1,11 @@
-FROM php:apache
+FROM php:alpine
 MAINTAINER Will Hall "will@willhallonline.co.uk"
 
 # Update image
-RUN apt-get update -y
+RUN apk update
 
 # Install Dependencies
-RUN apt-get install -y \
+RUN apk add --no-cache --virtual .persistent-deps \
     zip \
     unzip \
     git \
