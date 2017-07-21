@@ -1,6 +1,9 @@
 FROM php:alpine
 MAINTAINER Will Hall "will@willhallonline.co.uk"
 
+LABEL io.whalebrew.config.working_dir '/app'
+LABEL io.whalebrew.name composer
+
 # Update image
 RUN apk update
 
