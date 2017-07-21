@@ -1,7 +1,7 @@
 FROM php:alpine
 MAINTAINER Will Hall "will@willhallonline.co.uk"
 
-LABEL io.whalebrew.name composer
+LABEL io.whalebrew.name composer-brew
 LABEL io.whalebrew.config.working_dir '/app'
 
 # Update image
