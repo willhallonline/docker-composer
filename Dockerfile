@@ -1,4 +1,4 @@
-FROM php
+FROM php:7.2
 MAINTAINER Will Hall "will@willhallonline.co.uk"
 
 # Install Dependencies
