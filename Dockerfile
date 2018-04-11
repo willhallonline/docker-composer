@@ -1,4 +1,4 @@
-FROM php:alpine
+FROM php:7.2-alpine
 MAINTAINER Will Hall "will@willhallonline.co.uk"
 
 LABEL io.whalebrew.name composer-brew
