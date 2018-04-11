@@ -1,6 +1,9 @@
 FROM php:alpine
 MAINTAINER Will Hall "will@willhallonline.co.uk"
 
+LABEL io.whalebrew.name composer-brew
+LABEL io.whalebrew.config.working_dir '/app'
+
 # Install Dependencies
 RUN apk add --no-cache --virtual .persistent-deps \
     zip \
