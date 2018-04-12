@@ -2,11 +2,12 @@ FROM php:7.2
 MAINTAINER Will Hall "will@willhallonline.co.uk"
 
 # Install Dependencies
-RUN apk add --no-cache --virtual .persistent-deps \
+RUN apt-get update && apt-get install -y \
     zip \
     unzip \
     git \
-    patch
+    patch \
+    --no-install-recommends && rm -r /var/lib/apt/lists/*
 
 # Remove memory limit for PHP-CLI and set timezone
 RUN echo "memory_limit = -1" > /usr/local/etc/php/conf.d/memory-limit.ini \
