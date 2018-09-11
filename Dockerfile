@@ -9,7 +9,8 @@ RUN apk add --no-cache --virtual .persistent-deps \
     zip \
     unzip \
     git \
-    patch
+    patch \
+    libpng-dev
 
 RUN docker-php-ext-install gd
 
