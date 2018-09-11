@@ -11,6 +11,8 @@ RUN apk add --no-cache --virtual .persistent-deps \
     git \
     patch
 
+RUN docker-php-ext-install gd
+
 # Remove memory limit for PHP-CLI and set timezone
 RUN echo "memory_limit = -1" > /usr/local/etc/php/conf.d/memory-limit.ini \
     && echo "date.timezone = UTC" >> /usr/local/etc/php/conf.d/date-timezone.ini
