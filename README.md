@@ -3,15 +3,15 @@
 
 
 ## Supported tags and respective ```Dockerfile``` links
-* ```php-7.2```, ```7.2```, ```alpine```, ```latest```
-* ```php-7.3```
-* ```php-5.6```
-* ```php-7.2-stretch```, ```stretch```, ```debian```
-* ```php-7.3-stretch``
-* ```php-5.6-stretch```
-* ```php-7.2-apache```, ```apache```
-* ```php-7.3-apache```
-* ```php-5.6-apache```
+* ```php-7.2```, ```7.2```, ```alpine```, ```latest``` (Dockerfile)[https://github.com/willhallonline/docker-composer/blob/master/php72/alpine/Dockerfile]
+* ```php-7.3``` (Dockerfile)[https://github.com/willhallonline/docker-composer/blob/master/php73/alpine/Dockerfile]
+* ```php-5.6``` (Dockerfile)[https://github.com/willhallonline/docker-composer/blob/master/php56/alpine/Dockerfile]
+* ```php-7.2-stretch```, ```stretch```, ```debian``` (Dockerfile)[https://github.com/willhallonline/docker-composer/blob/master/php72/stretch/Dockerfile]
+* ```php-7.3-stretch``` (Dockerfile)[https://github.com/willhallonline/docker-composer/blob/master/php73/stretch/Dockerfile]
+* ```php-5.6-stretch``` (Dockerfile)[https://github.com/willhallonline/docker-composer/blob/master/php56/stretch/Dockerfile]
+* ```php-7.2-apache```, ```apache``` (Dockerfile)[https://github.com/willhallonline/docker-composer/blob/master/php72/apache/Dockerfile]
+* ```php-7.3-apache``` (Dockerfile)[https://github.com/willhallonline/docker-composer/blob/master/php73/apache/Dockerfile]
+* ```php-5.6-apache``` (Dockerfile)[https://github.com/willhallonline/docker-composer/blob/master/php72/apache/Dockerfile]
 
 ## What is Composer?
 
@@ -62,7 +62,7 @@ Generating autoload files
 composer.json
 composer.lock
 vendor/  # vendor packages installed here
-``
+```
 
 #### Composer Install
 
@@ -80,7 +80,7 @@ Package operations: 4 installs, 0 updates, 0 removals
 guzzlehttp/guzzle suggests installing psr/log (Required for using the Log middleware)
 Generating autoload files
 ```
-```
+
 **Note that this will install files as ```root``` user. You can potentially add the ```-u 1000:1000``` options to the command, however, this may introduce other challenges.** 
 
 ## Maintainer
