@@ -9,9 +9,9 @@
 * ```php-7.2-stretch```, ```stretch```, ```debian``` [Dockerfile](https://github.com/willhallonline/docker-composer/blob/master/php72/stretch/Dockerfile)
 * ```php-7.3-stretch``` [Dockerfile](https://github.com/willhallonline/docker-composer/blob/master/php73/stretch/Dockerfile)
 * ```php-5.6-stretch``` [Dockerfile](https://github.com/willhallonline/docker-composer/blob/master/php56/stretch/Dockerfile)
-* ```php-7.2-apache```, ```apache``` (Dockerfile)[https://github.com/willhallonline/docker-composer/blob/master/php72/apache/Dockerfile]
-* ```php-7.3-apache``` (Dockerfile)[https://github.com/willhallonline/docker-composer/blob/master/php73/apache/Dockerfile]
-* ```php-5.6-apache``` (Dockerfile)[https://github.com/willhallonline/docker-composer/blob/master/php72/apache/Dockerfile]
+* ```php-7.2-apache```, ```apache``` [Dockerfile](https://github.com/willhallonline/docker-composer/blob/master/php72/apache/Dockerfile)
+* ```php-7.3-apache``` [Dockerfile](https://github.com/willhallonline/docker-composer/blob/master/php73/apache/Dockerfile)
+* ```php-5.6-apache``` [Dockerfile](https://github.com/willhallonline/docker-composer/blob/master/php72/apache/Dockerfile)
 
 ## What is Composer?
 
@@ -66,7 +66,7 @@ vendor/  # vendor packages installed here
 
 #### Composer Install
 
-Providing you already have ```composer.json`` (and maybe ```composer.lock```)
+Providing you already have ```composer.json``` (and maybe ```composer.lock```)
 
 ```
 docker run --rm -it -v $(pwd):/app willhallonline/composer:alpine composer install
