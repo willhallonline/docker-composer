@@ -1,14 +1,14 @@
 # Docker Composer
 
-
+![Docker Pulls](https://img.shields.io/docker/pulls/willhallonline/composer.svg) ![MicroBadger Layers](https://img.shields.io/microbadger/layers/willhallonline/composer/alpine.svg)
 
 ## Supported tags and respective ```Dockerfile``` links
-* ```php-7.2```, ```7.2```, ```alpine```, ```latest``` (Dockerfile)[https://github.com/willhallonline/docker-composer/blob/master/php72/alpine/Dockerfile]
-* ```php-7.3``` (Dockerfile)[https://github.com/willhallonline/docker-composer/blob/master/php73/alpine/Dockerfile]
-* ```php-5.6``` (Dockerfile)[https://github.com/willhallonline/docker-composer/blob/master/php56/alpine/Dockerfile]
-* ```php-7.2-stretch```, ```stretch```, ```debian``` (Dockerfile)[https://github.com/willhallonline/docker-composer/blob/master/php72/stretch/Dockerfile]
-* ```php-7.3-stretch``` (Dockerfile)[https://github.com/willhallonline/docker-composer/blob/master/php73/stretch/Dockerfile]
-* ```php-5.6-stretch``` (Dockerfile)[https://github.com/willhallonline/docker-composer/blob/master/php56/stretch/Dockerfile]
+* ```php-7.2```, ```7.2```, ```alpine```, ```latest``` [Dockerfile](https://github.com/willhallonline/docker-composer/blob/master/php72/alpine/Dockerfile)
+* ```php-7.3``` [Dockerfile](https://github.com/willhallonline/docker-composer/blob/master/php73/alpine/Dockerfile)
+* ```php-5.6``` [Dockerfile](https://github.com/willhallonline/docker-composer/blob/master/php56/alpine/Dockerfile)
+* ```php-7.2-stretch```, ```stretch```, ```debian``` [Dockerfile](https://github.com/willhallonline/docker-composer/blob/master/php72/stretch/Dockerfile)
+* ```php-7.3-stretch``` [Dockerfile](https://github.com/willhallonline/docker-composer/blob/master/php73/stretch/Dockerfile)
+* ```php-5.6-stretch``` [Dockerfile](https://github.com/willhallonline/docker-composer/blob/master/php56/stretch/Dockerfile)
 * ```php-7.2-apache```, ```apache``` (Dockerfile)[https://github.com/willhallonline/docker-composer/blob/master/php72/apache/Dockerfile]
 * ```php-7.3-apache``` (Dockerfile)[https://github.com/willhallonline/docker-composer/blob/master/php73/apache/Dockerfile]
 * ```php-5.6-apache``` (Dockerfile)[https://github.com/willhallonline/docker-composer/blob/master/php72/apache/Dockerfile]
