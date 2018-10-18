@@ -1,4 +1,4 @@
-FROM php:7.3-apache
+FROM php:7.3-rc-apache
 MAINTAINER Will Hall "will@willhallonline.co.uk"
 
 # Install Dependencies

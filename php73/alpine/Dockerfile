@@ -1,4 +1,4 @@
-FROM php:7.3-alpine
+FROM php:7.3-rc-alpine
 MAINTAINER Will Hall "will@willhallonline.co.uk"
 
 # Install Dependencies
