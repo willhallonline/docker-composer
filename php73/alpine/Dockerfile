@@ -1,16 +1,14 @@
-FROM php:7.2
+FROM php:7.3-alpine
 MAINTAINER Will Hall "will@willhallonline.co.uk"
 
 # Install Dependencies
-RUN apt-get update && apt-get install -y \
+RUN apk add --no-cache --virtual .persistent-deps \
     zip \
     unzip \
     git \
     patch \
-    libpng-dev \
-    --no-install-recommends && rm -r /var/lib/apt/lists/*
-
-RUN docker-php-ext-install gd
+    libpng-dev && \
+    docker-php-ext-install gd
 
 # Remove memory limit for PHP-CLI and set timezone
 RUN echo "memory_limit = -1" > /usr/local/etc/php/conf.d/memory-limit.ini \
