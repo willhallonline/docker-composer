@@ -25,7 +25,7 @@
 
 ```
 $  docker pull willhallonline/composer
-$  docker pull willhallonline/composer:debian
+$  docker pull willhallonline/composer:stretch
 $  docker pull willhallonline/composer:apache
 ```
 
