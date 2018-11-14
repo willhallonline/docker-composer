@@ -1,5 +1,15 @@
 FROM php:5.6-stretch
-MAINTAINER Will Hall "will@willhallonline.co.uk"
+
+LABEL maintainer="will@willhallonline.co.uk" \
+    org.label-schema.schema-version="1.0" \
+    org.label-schema.build-date=$BUILD_DATE \
+    org.label-schema.vcs-ref=$VCS_REF \
+    org.label-schema.name="willhallonline/composer" \
+    org.label-schema.description="Composer inside Docker" \
+    org.label-schema.url="https://github.com/willhallonline/docker-composer" \
+    org.label-schema.vcs-url="https://github.com/willhallonline/docker-composer" \
+    org.label-schema.vendor="Will Hall Online" \
+    org.label-schema.docker.cmd="docker run --rm -it -v $(pwd):/app willhallonline/composer:5.6-stretch"
 
 # Install Dependencies
 RUN apt-get update && apt-get install -y \
