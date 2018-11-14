@@ -1,6 +1,6 @@
 # Docker Composer
 
-![Docker Pulls](https://img.shields.io/docker/pulls/willhallonline/composer.svg) ![MicroBadger Layers](https://img.shields.io/microbadger/layers/willhallonline/composer/alpine.svg)
+[![Docker Pulls](https://img.shields.io/docker/pulls/willhallonline/composer.svg)][hub] [![MicroBadger Layers](https://img.shields.io/microbadger/layers/willhallonline/composer/alpine.svg)][microbadger] [![Docker Automated build](https://img.shields.io/docker/automated/willhallonline/composer.svg)][hub] [![Docker Build Status](https://img.shields.io/docker/build/jrottenberg/ffmpeg.svg)][hub]
 
 ## Supported tags and respective ```Dockerfile``` links
 * ```php-7.2```, ```7.2```, ```alpine```, ```latest``` [Dockerfile](https://github.com/willhallonline/docker-composer/blob/master/php72/alpine/Dockerfile)
@@ -25,7 +25,7 @@
 
 ```
 $  docker pull willhallonline/composer
-$  docker pull willhallonline/composer:debian
+$  docker pull willhallonline/composer:stretch
 $  docker pull willhallonline/composer:apache
 ```
 
@@ -86,3 +86,6 @@ Generating autoload files
 ## Maintainer
 
 * Will Hall, contact me on [https://www.willhallonline.co.uk](https://www.willhallonline.co.uk).
+
+[hub]: https://hub.docker.com/r/willhallonline/composer
+[microbadger]: https://microbadger.com/images/willhallonline/composer
