@@ -13,7 +13,7 @@ build-php56:
   script:
     - docker build --pull -t "$CI_REGISTRY_IMAGE:5.6-alpine" php56/alpine/
     - docker build --pull -t "$CI_REGISTRY_IMAGE:5.6-apache" php56/apache/
-    - docker build --pull -t "$CI_REGISTRY_IMAGE:5.6-stretch php56/stretch/
+    - docker build --pull -t "$CI_REGISTRY_IMAGE:5.6-stretch" php56/stretch/
     - docker push "$CI_REGISTRY_IMAGE"
 
 build-php72:
@@ -21,7 +21,7 @@ build-php72:
   script:
     - docker build --pull -t "$CI_REGISTRY_IMAGE:7.2-alpine" php72/alpine/
     - docker build --pull -t "$CI_REGISTRY_IMAGE:7.2-apache" php72/apache/
-    - docker build --pull -t "$CI_REGISTRY_IMAGE:7.2-stretch php72/stretch/
+    - docker build --pull -t "$CI_REGISTRY_IMAGE:7.2-stretch" php72/stretch/
     - docker push "$CI_REGISTRY_IMAGE"
 
 build-php73:
@@ -29,5 +29,5 @@ build-php73:
   script:
     - docker build --pull -t "$CI_REGISTRY_IMAGE:7.3-alpine" php73/alpine/
     - docker build --pull -t "$CI_REGISTRY_IMAGE:7.3-apache" php73/apache/
-    - docker build --pull -t "$CI_REGISTRY_IMAGE:7.3-stretch php73/stretch/
+    - docker build --pull -t "$CI_REGISTRY_IMAGE:7.3-stretch" php73/stretch/
     - docker push "$CI_REGISTRY_IMAGE"
